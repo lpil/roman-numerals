@@ -2,9 +2,6 @@ defmodule RomanNumerals.Decoder do
   @moduledoc false
 
 
-  @spec decode(String.t) :: pos_integer
-
-
   def decode(x) when is_binary(x) do
     decode(x, 0)
   end

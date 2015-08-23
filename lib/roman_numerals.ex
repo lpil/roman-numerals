@@ -3,14 +3,21 @@ defmodule RomanNumerals do
   Encode and decode Roman numerals!
   """
 
+  @type roman_numerals :: String.t
+
+
+  @spec encode(pos_integer) :: roman_numerals
+
   @doc """
   Converts a positive integer to a Roman numeral binary.
 
       iex> RomanNumerals.encode 1991
       "MCMXCI"
   """
-  defdelegate encode(positive_integer), to: RomanNumerals.Encoder
+  defdelegate encode(number), to: RomanNumerals.Encoder
 
+
+  @spec decode(roman_numerals) :: pos_integer
 
   @doc """
   Converts a Roman numeral binary to an integer.
@@ -18,5 +25,5 @@ defmodule RomanNumerals do
       iex> RomanNumerals.decode "XCVII"
       97
   """
-  defdelegate decode(numerals_binary), to: RomanNumerals.Decoder
+  defdelegate decode(numerals), to: RomanNumerals.Decoder
 end

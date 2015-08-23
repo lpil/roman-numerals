@@ -2,9 +2,6 @@ defmodule RomanNumerals.Encoder do
   @moduledoc false
 
 
-  @spec encode(pos_integer) :: String.t
-
-
   def encode(n) when is_integer(n) and n >= 0 do
     encode(n, "")
   end
