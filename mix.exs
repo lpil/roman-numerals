@@ -36,7 +36,7 @@ defmodule RomanNumerals.Mixfile do
       # Automatic test runner
       {:mix_test_watch, only: :dev},
       # Code style linter
-      {:dogma, only: :dev},
+      {:dogma, only: ~w(dev test)a},
       # Erlang Quickcheck
       {:triq, github: "krestenkrab/triq", only: :test},
       # Elixir wrapper for triq

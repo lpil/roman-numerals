@@ -13,7 +13,7 @@ Add Dogma to your Mix dependencies
 # mix.exs
 def deps do
   [
-    {:roman_numerals, "~> 0.0"},
+    {:roman_numerals, "~> 1.0"},
   ]
 end
 ```
@@ -21,7 +21,13 @@ end
 And then use `RomanNumerals.encode/1` and `RomanNumerals.decode/1` in your
 application for all that numeral goodness. :)
 
+
 ```elixir
+RomanNumerals.encode 1991
+# => "mcmxci"
+
+RomanNumerals.decode "XCVII"
+# => 97
 ```
 
 
