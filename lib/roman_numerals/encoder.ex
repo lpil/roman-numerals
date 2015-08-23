@@ -1,11 +1,10 @@
 defmodule RomanNumerals.Encoder do
   @moduledoc false
 
+
   @spec encode(pos_integer) :: String.t
 
-  @doc """
-  Converts a positive integer to a Roman numeral binary.
-  """
+
   def encode(n) when is_integer(n) and n >= 0 do
     encode(n, "")
   end

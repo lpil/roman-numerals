@@ -1,11 +1,10 @@
 defmodule RomanNumerals.Decoder do
   @moduledoc false
 
+
   @spec decode(String.t) :: pos_integer
 
-  @doc """
-  Converts a Roman numeral binary to an integer.
-  """
+
   def decode(x) when is_binary(x) do
     decode(x, 0)
   end

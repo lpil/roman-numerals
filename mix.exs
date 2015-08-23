@@ -1,7 +1,7 @@
 defmodule RomanNumerals.Mixfile do
   use Mix.Project
 
-  @version "0.0.1"
+  @version "1.0.0"
 
   def project do
     [
@@ -33,8 +33,6 @@ defmodule RomanNumerals.Mixfile do
 
   defp deps do
     [
-      # Test coverage checker
-      {:excoveralls, only: ~w(dev test)a},
       # Automatic test runner
       {:mix_test_watch, only: :dev},
       # Code style linter
@@ -44,12 +42,12 @@ defmodule RomanNumerals.Mixfile do
       # Elixir wrapper for triq
       {:excheck, only: :test},
 
-      # # Documentation checker
-      # {:inch_ex, only: ~w(dev test docs)a},
-      # # Markdown processor
-      # {:earmark, "~> 0.1", only: :dev},
-      # # Documentation generator
-      # {:ex_doc, "~> 0.7", only: :dev},
+      # Documentation checker
+      {:inch_ex, only: ~w(dev test docs)a},
+      # Markdown processor
+      {:earmark, "~> 0.1", only: :dev},
+      # Documentation generator
+      {:ex_doc, "~> 0.7", only: :dev},
     ]
   end
 end

@@ -1,34 +1,4 @@
-RomanNumerals
-=============
-
-[![Build Status](https://travis-ci.org/lpil/roman-numerals.svg)](https://travis-ci.org/lpil/roman-numerals)
-
-Convert numbers to Roman numerals and back.
-
-## Usage
-
-Add Dogma to your Mix dependencies
-
-```elixir
-# mix.exs
-def deps do
-  [
-    {:roman_numerals, "~> 0.0"},
-  ]
-end
-```
-
-And then use `RomanNumerals.encode/1` and `RomanNumerals.decode/1` in your
-application for all that numeral goodness. :)
-
-```elixir
-```
-
-
-# LICENCE
-
-```
-RomanNumerals
+Dogma - A code style linter for Elixir, powered by shame.
 Copyright © 2015 Louis Pilfold - MIT Licence
 
 Permission is hereby granted, free of charge, to any person obtaining
@@ -48,4 +18,3 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
 DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
 OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-```
