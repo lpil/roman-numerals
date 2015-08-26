@@ -24,7 +24,7 @@ application for all that numeral goodness. :)
 
 ```elixir
 RomanNumerals.encode 1991
-# => "mcmxci"
+# => "MCMXCI"
 
 RomanNumerals.decode "XCVII"
 # => 97
