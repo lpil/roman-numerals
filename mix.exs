@@ -8,7 +8,7 @@ defmodule RomanNumerals.Mixfile do
       app: :roman_numerals,
       version: @version,
       elixir: "~> 1.0",
-      deps: deps,
+      deps: deps(),
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
       test_coverage: [tool: ExCoveralls],
