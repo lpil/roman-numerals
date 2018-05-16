@@ -1,14 +1,14 @@
 defmodule RomanNumerals.Mixfile do
   use Mix.Project
 
-  @version "1.0.1"
+  @version "1.0.2"
 
   def project do
     [
       app: :roman_numerals,
       version: @version,
       elixir: "~> 1.0",
-      deps: deps,
+      deps: deps(),
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
       test_coverage: [tool: ExCoveralls],
