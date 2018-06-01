@@ -1,7 +1,6 @@
 defmodule RomanNumerals.Encoder do
   @moduledoc false
 
-
   def encode(n) when is_integer(n) and n >= 0 do
     encode(n, "")
   end

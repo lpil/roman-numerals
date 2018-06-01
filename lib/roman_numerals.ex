@@ -3,8 +3,7 @@ defmodule RomanNumerals do
   Encode and decode Roman numerals!
   """
 
-  @type roman_numerals :: String.t
-
+  @type roman_numerals :: String.t()
 
   @spec encode(pos_integer) :: roman_numerals
 
@@ -15,7 +14,6 @@ defmodule RomanNumerals do
       "MCMXCI"
   """
   defdelegate encode(number), to: RomanNumerals.Encoder
-
 
   @spec decode(roman_numerals) :: pos_integer
 
